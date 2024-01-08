@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Завдання:
+        Не використовуючи CSS-класи, змініть за допомогою JavaScript-коду оформлення елемента DIV, який розташований на поточній сторінці.
+        
+         Додайте:
+         >> шрифт – 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         >> суцільну рамку червоного кольору товщиною 1 px;
+         >> внутрішній відступ у 16px;
+         >> округлення рамки в 8 px.
+      -->
+</head>
+<body>
+    <div>
+        Логін або пароль введено неправильно
+    </div>
+    <script>
+         let errorDiv = document.querySelector('div');
+
+// Зміна стилів елемента div
+errorDiv.style.fontFamily = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+errorDiv.style.border = '1px solid red';
+errorDiv.style.padding = '16px';
+errorDiv.style.borderRadius = '8px';
+    </script>
+</body>
+</html>
