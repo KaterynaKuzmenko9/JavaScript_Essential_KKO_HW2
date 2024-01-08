@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Для елементів з атрибутом data-status="expired" зробіть рамку червоного кольору. Для елементів з атрибутом data-status="completed" виведіть рамку зеленого кольору. -->
+</head>
+<body>
+    <div class="task" data-status="completed">
+        Купити молоко
+    </div>
+
+    <div class="task" data-status="expired">
+        Вигуляти собаку
+    </div>
+
+    <div class="task">
+        Вивчити JavaScript
+    </div>
+
+    <div class="task">
+        Врятувати світ
+    </div>
+    
+    <script>
+        let taskElements = document.querySelectorAll('.task');
+taskElements.forEach(element => {
+    let status = element.getAttribute('data-status');
+
+    if (status === 'completed') {
+        element.style.border = '2px solid green';
+    } else if (status === 'expired') {
+        element.style.border = '2px solid red';
+    }
+});
+    </script>
+</body>
+</html>

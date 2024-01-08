@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--   /*
+        Завдання:
+        Напишіть сценарій, який змінює колір тексту елементів div на той, який вказаний як значення атрибута data-color.
+        */ -->
+</head>
+<body>
+    <div data-color="red">Div 1</div>
+    <div data-color="green">Div 2</div>
+    <div data-color="blue">Div 3</div>
+
+    <script>
+    let divElements = document.querySelectorAll('div');
+    divElements.forEach(div => { 
+     let color = div.getAttribute('data-color');
+
+// Встановлення кольору тексту для кожного елемента div
+div.style.color = color;
+});
+
+    </script>
+    
+</body>
+</html>
