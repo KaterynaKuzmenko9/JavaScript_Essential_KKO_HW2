@@ -62,6 +62,12 @@
     <script>
         let statsTable = document.getElementById("statsTable");
          let rows = statsTable.getElementsByTagName("tr");
+         let value = parseInt(cells[1].textContent);
+
+            // Перевірка, чи значення менше за 100
+            if (value < 100) 
+                // Видалення поточного рядка
+                statsTable.deleteRow(i);
          
         statsTable.deleteRow(i);
         </script>
