@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--  
+        Завдання:
+        Напишіть сценарій, який видалить на сторінці елементи з атрибутом data-remove.
+        -->
+</head>
+<body>
+
+    <div>Div 1</div>
+    <div data-remove>Div 2</div>
+    <div>Div 3</div>
+    <div data-remove>Div 4</div>
+    
+    <script>
+     let elementsToRemove = document.querySelectorAll('[data-remove]');
+     elementsToRemove.forEach(element => {
+    element.remove();
+});
+    </script>
+</body>
+</html>
